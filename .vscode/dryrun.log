@@ -1,0 +1,44 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+if [ ! -f nbproject/Makefile-Debug.mk ]; \
+then \
+    echo ""; \
+    echo "Error: can not find the makefile for configuration 'Debug' in project 2021AbaloneExercise2b"; \
+    echo "See 'make help' for details."; \
+    echo "Current directory: " `pwd`; \
+    echo ""; \
+fi
+if [ ! -f nbproject/Makefile-Debug.mk ]; \
+then \
+    exit 1; \
+fi
+echo "# This code depends on make tool being used" >.dep.inc
+if [ -n "4.3" ]; then \
+    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES} \${TESTOBJECTFILES}))" >>.dep.inc; \
+    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+    echo "include \${DEPFILES}" >>.dep.inc; \
+    echo "endif" >>.dep.inc; \
+else \
+    echo ".KEEP_STATE:" >>.dep.inc; \
+    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+fi
+#echo "=> Running .build-impl... Configuration=Debug"
+"make" -f nbproject/Makefile-Debug.mk QMAKE= SUBPROJECTS= .build-conf
+make[1]: Entering directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+"make"  -f nbproject/Makefile-Debug.mk dist/Debug/MinGW-Windows/2021abaloneexercise2b.exe
+make[2]: Entering directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+mkdir -p build/Debug/MinGW-Windows
+rm -f "build/Debug/MinGW-Windows/board.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/MinGW-Windows/board.o.d" -o build/Debug/MinGW-Windows/board.o board.cpp
+mkdir -p build/Debug/MinGW-Windows
+rm -f "build/Debug/MinGW-Windows/cell.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/MinGW-Windows/cell.o.d" -o build/Debug/MinGW-Windows/cell.o cell.cpp
+mkdir -p build/Debug/MinGW-Windows
+rm -f "build/Debug/MinGW-Windows/main.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/MinGW-Windows/main.o.d" -o build/Debug/MinGW-Windows/main.o main.cpp
+mkdir -p dist/Debug/MinGW-Windows
+g++     -o dist/Debug/MinGW-Windows/2021abaloneexercise2b build/Debug/MinGW-Windows/board.o build/Debug/MinGW-Windows/cell.o build/Debug/MinGW-Windows/main.o 
+make[2]: Leaving directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+make[1]: Leaving directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+make: Leaving directory '/home/mxolisi/Documents/real_2022_abalone/2022_abalone'
+ 

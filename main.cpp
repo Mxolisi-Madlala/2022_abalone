@@ -33,9 +33,9 @@ int main(int argc, char** argv) {
         int n, fd, md;
         while(log>>l>>n>>fd>>md){
             cout<<"Move: "<<l<<" "<<n<<" "<<fd<<" "<<md;
-            bool valid = abalone.executeMove(l,n,fd,md);
             
-            if(valid){
+            
+            if(abalone.executeMove(l,n, fd, md)){
                 string nbs(abalone);
                 cout<<" - Next Abalone board state:"<<endl;
                 cout<<nbs<<endl;

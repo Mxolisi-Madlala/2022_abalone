@@ -6,5 +6,6 @@
             "binaryPath": "/home/mxolisi/Documents/real_2022_abalone/2022_abalone/dist/Debug/MinGW-Windows/2021abaloneexercise2b",
             "binaryArgs": []
         }
-    ]
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
 }

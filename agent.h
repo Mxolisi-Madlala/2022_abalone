@@ -23,15 +23,18 @@
    #endif
 #endif 
 
+//fd direction from leading to ff marbles
+//md direction of marble movement
+//d2e distance from leading marbles to the edge
+//mtype how many opponents moves to be moved 
+//Movscore opponent marble to be pushed off the board?
+
+
 struct moves{
-    string l;//location
-    int nmarbles, fd, md, d2e, mtype;//number of current player's marbles moving
-    //int fd;//direction from leading marbles to following marbles
-    //int md;//direction in which n marbles seek to move
-    //int d2e;//distance from leading marble to the edge of the board in move direction
-    //int mtype;//-1 broad-side 0-2 for in-line depending on how many opponent marbles are to be pushed
-    bool scoreMove;//opponent marble to be pushed off the board?
-    moves(const string& l,const int& nmarbles,const int& fd,const int& md,const int& d2e,const int& mtype,const bool& scoreMove);
+    string location;
+    int numbmarbles, fd, md, d2e, mtype;
+    bool Movscore;
+    moves(const string& location,const int& numbmarbles,const int& fd,const int& md,const int& d2e,const int& mtype,const bool& Movscore);
     moves(const moves&);
 };
 double score(const moves&);

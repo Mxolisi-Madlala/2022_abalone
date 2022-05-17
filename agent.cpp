@@ -40,5 +40,6 @@ agent::agent(const char &agent) : symbol(agent)
 
 vector<moves> agent::findMoves(const board& bod) const
 {
-
+    vector<moves> mv;
+    map<string, cell*> cells = board();
 }

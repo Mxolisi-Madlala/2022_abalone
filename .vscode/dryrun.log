@@ -1,4 +1,4 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe build --dry-run --keep-going --print-directory
 make.exe: Entering directory `c:/Users/mxolisi/Pictures/2022_abalone'
 if [ ! -f nbproject/Makefile-Debug.mk ]; \
 	then \
@@ -12,6 +12,9 @@ if [ ! -f nbproject/Makefile-Debug.mk ]; \
 	then \
 	    exit 1; \
 	fi
+ 
+process_begin: CreateProcess(NULL, "", ...) failed.
+
 echo "# This code depends on make tool being used" >.dep.inc
 if [ -n "3.81" ]; then \
 	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES} \${TESTOBJECTFILES}))" >>.dep.inc; \
@@ -24,10 +27,10 @@ if [ -n "3.81" ]; then \
 	fi
 #echo "=> Running .build-impl... Configuration=Debug"
 "make.exe" -f nbproject/Makefile-Debug.mk QMAKE= SUBPROJECTS= .build-conf
-make.exe: Leaving directory `c:/Users/mxolisi/Pictures/2022_abalone'
  
-process_begin: CreateProcess(NULL, "", ...) failed.
 process_begin: CreateProcess(NULL, "", ...) failed.
 make (e=87): The parameter is incorrect.
 make.exe: *** [.build-impl] Error 87
 
+make.exe: Leaving directory `c:/Users/mxolisi/Pictures/2022_abalone'
+ 

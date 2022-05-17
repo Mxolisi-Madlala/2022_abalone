@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
-/*
+
 #ifndef _SLP_CL_EG
    #define _SLP_CL_EG
    #define C(x) #x 
@@ -21,7 +21,7 @@
       #include <unistd.h>
       #define CL C(clear)
    #endif
-#endif */
+#endif 
 
 struct moves{
     string l;//location

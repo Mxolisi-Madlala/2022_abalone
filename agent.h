@@ -1,3 +1,6 @@
+// referenced and edited from the 2020 abalone project from UKZN.
+// MCS
+
 #include "board.h"
 #include "cell.h"
 #include <set>

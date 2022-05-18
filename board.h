@@ -26,6 +26,7 @@ class board{
     int woc;//white marbles off the board count.
     int boc;//black marbles off the board count.
 public:
+    map<string,cell*> cells;
     board();//create 61 cells on the heap, and connect them.
     board(const board&);//copy constructor
     ~board();//recycle 61 cells.
